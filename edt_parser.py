@@ -83,8 +83,8 @@ def random_color(course, filename):
     return color
 
 
-with open("./data/colors.json", "r") as f:
-    js_colors = json.loads(f.decode("utf-8","ignore"))
+with open("./data/colors.json", encoding='ISO-8859-1') as f:
+    js_colors = json.load(f)
 
 
 def group_detector(query: str, grade: str):
