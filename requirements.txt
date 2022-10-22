@@ -1,4 +1,4 @@
-apscheduler==3.9.1
+APScheduler==3.9.1
 beautifulsoup4==4.11.1
 dateparser==1.1.1
 deepdiff==5.8.1

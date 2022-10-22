@@ -1,8 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_marshmallow import Marshmallow
 import json
 from datetime import datetime
 from edt_parser import get_ics
+from food import GenerateJson
 from apscheduler.schedulers.background import BackgroundScheduler
 
 app = Flask(__name__)
@@ -18,6 +19,11 @@ def getAllEdt():
         last_update = datetime.now()
 
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+
 @app.route('/<group>')
 def get_edt(group):
     try:
@@ -28,7 +34,7 @@ def get_edt(group):
     return {'data': data}, 200
 
 
-@app.route('/info/supported_edt')
+@app.route('/info/supported-edt')
 def get_supported_edt():
     data = []
     for i in range(len(supported_edt)):
@@ -36,9 +42,20 @@ def get_supported_edt():
     return {'data': data}, 200
 
 
-@app.route('/info/last_update')
+@app.route('/info/last-update')
 def get_last_update():
     return {'data': last_update}, 200
+
+
+@app.route('/food')
+def get_food():
+    with open('./data/food.json', 'r') as f:
+        data = json.load(f)
+    return {'data': data}, 200
+
+
+def generate_food():
+    GenerateJson('https://www.crous-grenoble.fr/restaurant/ru-dannecy/', 'food')
 
 
 supported_edt = [
@@ -54,9 +71,10 @@ supported_edt = [
 
 scheduler = BackgroundScheduler(timezone='Europe/Paris', day_of_week='mon-fri', hour=8, minute=0)
 scheduler.add_job(func=getAllEdt)
+scheduler.add_job(func=generate_food, trigger='cron',
+                  day_of_week='mon-fri', hour=8, minute=0)
 
 if __name__ == '__main__':
     scheduler.start()
     scheduler.print_jobs()
     app.run()  # run our Flask app
-

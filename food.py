@@ -7,8 +7,6 @@ from datetime import timedelta
 import re
 import json
 import warnings
-import pickle
-import logging
 
 # Ignore dateparser warnings regarding pytz
 warnings.filterwarnings(
@@ -203,6 +201,3 @@ def GenerateJson(url, filename):
         print('Unable to generate files')
 
     return '{}pkl'.format(name)
-
-GenerateJson(url, 'menu')
-

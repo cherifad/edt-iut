@@ -1,0 +1,39 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.code {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: 'Source Code Pro', monospace !important;
+    color: black;
+}
+
+li {
+    margin-bottom: 1rem;
+}

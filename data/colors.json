@@ -1,0 +1,150 @@
+{
+    "INFO_1": [
+        {
+            "color": "#edf6f9",
+            "course": "R1.06"
+        },
+        {
+            "color": "#cdb4db",
+            "course": "R1.05"
+        },
+        {
+            "color": "#ffddd2",
+            "course": "R1.12"
+        },
+        {
+            "color": "#ffafcc",
+            "course": "R1.01"
+        },
+        {
+            "color": "#83c5be",
+            "course": "R1.10"
+        },
+        {
+            "color": "#ffc8dd",
+            "course": "R1.04"
+        },
+        {
+            "color": "#a2d2ff",
+            "course": "R1.08"
+        },
+        {
+            "color": "#e29578",
+            "course": "R1.11"
+        },
+        {
+            "color": "#006d77",
+            "course": "S1.05"
+        },
+        {
+            "color": "#bde0fe",
+            "course": "R1.02"
+        },
+        {
+            "color": "#cdb4db",
+            "course": "S1.06"
+        },
+        {
+            "color": "#ffddd2",
+            "course": "R1.07"
+        },
+        {
+            "color": "#e29578",
+            "course": "R1.03"
+        },
+        {
+            "color": "#a2d2ff",
+            "course": "R1.09"
+        },
+        {
+            "color": "#ffc8dd",
+            "course": "S1.03"
+        },
+        {
+            "color": "#ffafcc",
+            "course": "Semai"
+        },
+        {
+            "color": "#bde0fe",
+            "course": "Cong√"
+        },
+        {
+            "color": "#ffddd2",
+            "course": "S1.04"
+        }
+    ],
+    "INFO_2": [
+        {
+            "color": "#006d77",
+            "course": "R3.12"
+        },
+        {
+            "color": "#edf6f9",
+            "course": "S3.01"
+        },
+        {
+            "color": "#83c5be",
+            "course": "R3.03"
+        },
+        {
+            "color": "#ffc8dd",
+            "course": "R3.13"
+        },
+        {
+            "color": "#cdb4db",
+            "course": "R3.06"
+        },
+        {
+            "color": "#bde0fe",
+            "course": "R3.09"
+        },
+        {
+            "color": "#ffddd2",
+            "course": "R3.07"
+        },
+        {
+            "color": "#e29578",
+            "course": "R3.04"
+        },
+        {
+            "color": "#edf6f9",
+            "course": "R3.14"
+        },
+        {
+            "color": "#a2d2ff",
+            "course": "R3.10"
+        },
+        {
+            "color": "#006d77",
+            "course": "R3.02"
+        },
+        {
+            "color": "#ffafcc",
+            "course": "R3.08"
+        },
+        {
+            "color": "#83c5be",
+            "course": "R3.01"
+        },
+        {
+            "color": "#006d77",
+            "course": "R3.05"
+        },
+        {
+            "color": "#ffddd2",
+            "course": "R3.11"
+        },
+        {
+            "color": "#e29578",
+            "course": "Forum"
+        },
+        {
+            "color": "#edf6f9",
+            "course": "Semai"
+        },
+        {
+            "color": "#ffddd2",
+            "course": "PPP-S"
+        }
+    ]
+}

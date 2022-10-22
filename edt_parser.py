@@ -213,3 +213,5 @@ def to_json(filename: str):
 
     print("Done")
     time.sleep(1)
+
+get_ics(supported_edt[1]['url'], supported_edt[1]['name'])
