@@ -69,12 +69,15 @@ supported_edt = [
     },
 ]
 
-scheduler = BackgroundScheduler(timezone='Europe/Paris', day_of_week='mon-fri', hour=8, minute=0)
-scheduler.add_job(func=getAllEdt)
+scheduler = BackgroundScheduler(timezone='Europe/Paris')
+scheduler.add_job(func=getAllEdt, trigger='cron',
+                  day_of_week='mon-fri', hour=8, minute=0)
 scheduler.add_job(func=generate_food, trigger='cron',
                   day_of_week='mon-fri', hour=8, minute=0)
 
 if __name__ == '__main__':
     scheduler.start()
     scheduler.print_jobs()
+    getAllEdt()
+    generate_food()
     app.run()  # run our Flask app

@@ -83,7 +83,7 @@ def random_color(course, filename):
     return color
 
 
-with open("./data/colors.json", "r") as f:
+with open("./data/colors.json", encoding='ISO-8859-1') as f:
     js_colors = json.load(f)
 
 
